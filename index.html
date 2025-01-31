@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WaffuruBaito Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>    
+<body> 
+    <div class="web"> 
+
+        <div class="logo">
+            <img src="logo-2.png"/>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#homepage">HOME</a></li>
+                <li><a href="#gallerypage">GALLERY</a></li>
+                <li><a href="#aboutuspage">ABOUT US</a></li>
+                <li><a href="#servicepage">SERVICE</a></li>
+                <li><a href="#formpage">FORM</a></li>
+            </ul> 
+            <button>Login</button>   
+        </nav>
+
+    </div>  
+
+    <div class="navlink">
+
+        <section id="homepage">
+
+            <div class="coin"> 
+
+                 <img src="coin.png"/>
+
+            </div>
+
+            <div class="bite">
+
+                <h1>HOME OF <br>JAPANESE-STYLE <br>WAFFLES</h1>
+                    <p>こんにちは!(Konnichiwa)<br>Welcome to Waffurubaito, where every waffle is a carefully crafted masterpiece. 
+                        <br>We create unique, delicious waffles that offer the perfect balance of flavor and 
+                        <br>texture in every bite. Whether you're here for a sweet treat or a new experience, 
+                        <br>we promise a memorable and satisfying journey with every waffle.</p>
+                    
+                    <button>Order Now</button>
+                    <button class="knowMore">Know More</button>
+            </div>
+
+        </section>
+
+    </div>
+
+        <section id="gallerypage">
+
+            <div class="main-container"> 
+
+                <div class="gallery-text">  
+
+                    <h1>WAFFFURU BAITO GALLERY</h1>
+                     <p> Explore our delightful collection of treats. </p> 
+
+                </div> 
+
+                <div class="img-gallery">
+
+                     <img src="biscoff.jpeg" onclick="openFullImg(this.src)" alt="Biscoff"> 
+                     <img src="strawberry.jpeg" onclick="openFullImg(this.src)" alt="Strawberry"> 
+                     <img src="nutella.jpeg" onclick="openFullImg(this.src)" alt="Nutella">
+                     <img src="cheese.jpeg" onclick="openFullImg(this.src)" alt="Cheese"> 
+                     <img src="ham&cheese.jpeg" onclick="openFullImg(this.src)" alt="Ham and Cheese"> 
+                     <img src="mozzarella.jpeg" onclick="openFullImg(this.src)" alt="Mozzarella"> 
+
+                </div> 
+
+            </div>
+             
+            <div class="full-img" id="fullimgBox"> 
+
+                <img src="biscoff.jpg.png" id="fullimg" alt="Full View"> 
+                <span onclick="closeFullImg()">X</span> 
+
+            </div>
+
+        </section>
+
+        <section id="aboutuspage">
+
+            <section class="content">
+
+                <section class="section">
+
+                    <h2>Welcome to Waffurubaito</h2> 
+                    <p>Welcome to Waffurubaito, where uniquely crafted Japanese-style waffles offer an unforgettable culinary adventure. We blend passion, creativity, and the finest ingredients to create each waffle, offering both sweet and savory delights designed to delight your taste buds.</p> 
+               
+                </section>
+
+                <section class="section"> 
+
+                    <h2>Our Story</h2> 
+                    <p>Waffurubaito was founded by <strong>Samantha Garcia Santos</strong>, whose love of cooking and desire to offer something special inspired her to create this unique waffle experience. Drawing inspiration from traditional Japanese waffle-making, Samantha combined her culinary passion and innovative spirit to craft a truly unique waffle experience.</p> 
+               
+                </section> 
+    
+                <section class="section"> 
+
+                    <h2>Our Team</h2> 
+                    <p>Behind every delicious waffle is a dedicated team committed to providing the highest quality and most delightful flavors. From our skilled kitchen staff to our friendly customer service team, we work together to ensure an exceptional experience for every customer.</p> 
+               
+                </section> 
+                
+                <section class="section">  
+
+                    <h2>Our Mission</h2> 
+                    <p>We are passionate about spreading joy through food. We believe that a great waffle can brighten anyone's day, and we are dedicated to ensuring that each customer leaves with a craving for more.</p> 
+                
+                </section> 
+
+            </section>
+
+        </section> 
+
+        <section id="servicepage"> 
+
+            <div class="service-container"> 
+
+                <h2>Our Services</h2> 
+
+                <div class="services-grid"> 
+
+                    <div class="service-card"> 
+
+                        <img src="dineIn.jpeg" alt="Dine-In Service"> 
+                        <h3>Dine-In</h3> 
+                        <p>Enjoy our fresh Japanese-style waffles in our cozy restaurant atmosphere. Perfect for solo diners, couples, or groups.</p> 
+
+                    </div> 
+
+                    <div class="service-card"> 
+
+                        <img src="takeout.jpeg" alt="Takeaway Service"> 
+                        <h3>Takeaway</h3> 
+                        <p>Grab your favorite waffles to go! Our specially designed packaging keeps them fresh and crispy.</p> 
+
+                    </div> 
+
+                    <div class="service-card"> 
+
+                        <img src="event.jpeg" alt="Events Catering"> 
+                        <h3>Events Catering</h3> 
+                        <p>Make your event special with our waffle stations! Perfect for birthdays, corporate events, and special occasions.</p> 
+
+                    </div> 
+
+                    <div class="service-card"> 
+
+                        <img src="customize.jpeg" alt="Custom Orders"> 
+                        <h3>Custom Orders</h3> 
+                        <p>Create your own unique waffle combinations or order in bulk for special events. Contact us for customization options!</p> 
+
+                    </div> 
+
+                </div> 
+
+            </div> 
+
+        </section> 
+
+        <section id="formpage"> 
+
+            <div class="wrapper"> 
+
+                <header> <h1>OrderNow</h1>  
+
+                   <nav> 
+                    
+                    <button id="cart-toggle">🛒 Cart (<span id="cart-count">0</span>)</button>  
+
+                   </nav>  
+
+               </header>  
+
+               <main class="container">  
+
+                   <section class="products"> 
+
+                        <div class="product">  
+
+                            <img src="nutella.jpeg" onclick="openFullImg(this.src)" alt="Nutella">  
+
+                            <div class="product-details"> <h3>Nutella Taiyaki</h3>  
+
+                               <p class="price">₱25.00</p>  
+                               <p class="description">Sweet Nutella in a crispy fish-shaped waffle</p> 
+
+                            </div>  
+
+                            <div class="product-actions">  
+
+                               <button class="add-to-cart" data-id="hotdog" data-name="Classic Hotdog" data-price="10.00">Add to Cart</button>  
+
+                            </div>  
+
+                        </div>  
+
+                        <div class="product">
+                        
+                            <img src="strawberry.jpeg" onclick="openFullImg(this.src)" alt="Strawberry">  
+
+                            <div class="product-details">  
+
+                               <h3>Strawberry Taiyaki</h3>  
+                               <p class="price">₱25.00</p>  
+                               <p class="description">Sweet Strawberry filling in a crispy fish-shaped waffle.</p>  
+
+                            </div>  
+
+                           <div class="product-actions">  
+
+                               <button class="add-to-cart" >Add to Cart</button>  
+
+                           </div>  
+
+                        </div>  
+
+                        <div class="product"> <img src="biscoff.jpeg" onclick="openFullImg(this.src)" alt="biscoff">  
+
+                           <div class="product-details">  
+
+                               <h3>Biscoff Taiyaki</h3>  
+
+                               <p class="price">₱25.00</p>  
+
+                               <p class="description">Caramel-like Biscoff filing in a crispy fish-shaped waffle.</p>  
+
+                            </div> 
+
+                            <div class="product-actions">  
+
+                               <button class="add-to-cart">Add to Cart</button>  
+
+                            </div>  
+
+                        </div>  
+
+                        <div class="product">  
+
+                             <img src="mozzarella.jpeg" onclick="openFullImg(this.src)" alt="mozzarella">  
+
+                            <div class="product-details"> 
+
+                                <h3>Mozzarella TenYen</h3>  
+
+                                <p class="price">₱45.00</p>  
+
+                                <p class="description">Classic </p>  
+
+                            </div>  
+
+                            <div class="product-actions">  
+
+                               <button class="add-to-cart" >Add to Cart</button>  
+
+                            </div>  
+
+                        </div> 
+
+                        <div class="product"> <img src="cheese.jpeg" onclick="openFullImg(this.src)" alt="cheese">  
+
+                            <div class="product-details">  
+
+                               <h3>Cheesy TenYen</h3>  
+
+                               <p class="price">₱35.00</p>  
+
+                               <p class="description">Classic </p>  
+
+                            </div>  
+
+                            <div class="product-actions"> 
+
+                                <button class="add-to-cart">Add to Cart</button> 
+
+                            </div> 
+
+                        </div>  
+
+                            <div class="product">  
+
+                                <img src="ham&cheese.jpeg" onclick="openFullImg(this.src)" alt="ham&cheese">  
+
+                                <div class="product-details">  
+
+                                    <h3>Ham&Cheese TenYen</h3>  
+                                    <p class="price">₱35.00</p>  
+                                    <p class="description">Classic </p>  
+
+                                </div>  
+
+                                <div class="product-actions"> 
+
+                                    <button class="add-to-cart">Add to Cart</button>  
+
+                                </div>  
+
+                            </div> 
+
+                    </section>  
+
+                                <aside class="cart">  
+
+                                   <h2>Your Cart</h2>  
+
+                                   <div class="cart-items">
+
+                                   </div>  
+
+                                        <div class="cart-summary"> 
+
+                                             <p>Total: <span id="cart-total">₱0.00</span></p>  
+                                             <button id="checkout-btn" disabled>Checkout</button>  
+
+                                        </div> 
+
+                                </aside>  
+
+                </main>  
+
+            </div>  
+
+            <footer> 
+
+                <div class="footer-content"> 
+
+                    <div> 
+
+                        <h3>Contact Us</h3> 
+
+                        <p>Email: Email: <a href="mailto:waffurubaito@gmail.com">waffurubaito@gmail.com</a></p> 
+
+                        <p>Phone: (+63) 961 638 9531</p> 
+
+                        <p>Social Media Links: <a href="https://www.facebook.com/share/19xejW2sTH/?mibextid=wwXIfr">Facebook</a></p> 
+
+                    </div> 
+
+                    <div> 
+
+                        <h3>Follow Us</h3> 
+
+                        <div class="social-links"> 
+
+                            <p><a href="https://www.facebook.com/share/19xejW2sTH/?mibextid=wwXIfr">Facebook</a></p> 
+
+                        </div> 
+
+                    </div> 
+
+                    <div> 
+
+                        <h3>Address</h3> 
+
+                        <p>RXC5+PRH, Market Rd, Santa Maria</p> 
+
+                        <p>Bulacan, Philippines</p> 
+
+                    </div> 
+
+                </div> 
+
+            </footer>           
+
+        </section> 
+
+</body> 
+
+</html> 
